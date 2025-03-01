@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffb3cc;
+    overflow: hidden; /* Bloqueia o scroll da página */
+
+  }
+  
+  .container {
+    text-align: center;
+    background-color: rgb(209, 108, 108);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .message {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .modal {
+    display: none;
+  }
+  
+  .form-container {
+    display: none;
+    margin-top: 20px;
+  }
+
+  .texto-vermelho {
+    color: rgb(255, 0, 0);
+  }
+
+  .texto-colorido {
+    color: rgb(255, 255, 255);
+  }
+   
+ /* Cor do fundo do modal */
+.modal-content {
+    background-color: #ffe6e6; /* Cor de fundo igual ao do body */
+    color: #000; /* Cor do texto preta */
+}
+
+/* Cor do cabeçalho do modal */
+.modal-header {
+    background-color: #ffe6e6; /* Cor de fundo igual ao do body */
+    color: #000; /* Cor do texto preta */
+    border-bottom: 2px solid #ffb3cc; /* Cor da borda inferior */
+}
+
+/* Cor do botão de fechar no modal */
+.modal-header .btn-close {
+    background-color: #ffb3cc; /* Cor do botão de fechar */
+}
+
+/* Cor do corpo do modal */
+.modal-body {
+    background-color: #ffe6e6; /* Cor de fundo igual ao do body */
+    color: #000; /* Cor do texto preta */
+}
+
+/* Cor dos botões no modal */
+.modal-footer .btn {
+    background-color: #ffb3cc; /* Cor do botão */
+    color: #000; /* Cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+}
+
+/* Cor dos botões de controle do carrossel */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #ffb3cc; /* Cor do ícone de navegação do carrossel */
+}
+
+h1 {
+    color: #333; /* Altere para a cor que preferir */
+    margin-bottom: 20px;
+}
+
+.lista-amor {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-amor li {
+    color: #333; /* Altere para a cor que preferir */
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.carousel-inner {
+    position: relative; /* Adiciona uma referência para o posicionamento das setas */
+}
+
+.carousel-item img {
+    width: 100%; /* Faz com que as imagens ocupem todo o espaço da área do carrossel */
+    height: auto; /* Ajusta a altura automaticamente */
+}
+
+.carousel-control-prev, .carousel-control-next {
+    position: absolute; /* Posiciona as setas de forma absoluta dentro do carrossel */
+    top: 50%;
+    transform: translateY(-50%); /* Centraliza verticalmente as setas */
+    z-index: 5; /* Garante que as setas fiquem sobre as imagens */
+}
+
+.carousel-control-prev {
+    left: 0;
+}
+
+.carousel-control-next {
+    right: 0;
+}
